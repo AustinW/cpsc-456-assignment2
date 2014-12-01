@@ -1,3 +1,12 @@
+####################################
+# Author: Austin White
+# Email: austinw@csu.fullerton.edu
+# Class: CPSC 456
+# Professor: Mikhail Gofman
+# Assignment: #2
+# Date: November 30, 2014
+####################################
+
 import sys
 import os
 from subprocess import call
@@ -40,6 +49,11 @@ def get_hex_dump(exec_path):
 	
 	return ret_val
 
+###########################################################
+# Compiles the binary programs into a single output file
+# @o_file - output file
+# @return - None
+##########################################################
 def compile_header_file(o_file):
 
 	# (c) Invoke the g++ compiler
@@ -53,12 +67,8 @@ def compile_header_file(o_file):
 
 	# If the process exited with a code of 0, then it ended normally.
 	# Otherwise, it terminated abnormally
-	if exit_code == 0:
-		ret_val = output
-	else:
+	if exit_code != 0:
 		raise Exception("Error compiling binary")
-	
-	return ret_val
 
 def main():
 	argv = sys.argv[1:]

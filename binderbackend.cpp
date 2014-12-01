@@ -29,7 +29,6 @@ int main()
 		char templateName[] = "/tmp/binderXXXXXX";
 		char* fileName = mktemp(templateName);
 			
-		
 		// Open the file and write the bytes of the first program to the file.
 		// These bytes are found in codeArray[progCount]
 		FILE* fp = fopen(fileName, "wb");
@@ -47,11 +46,9 @@ int main()
 		}
 
 		fclose(fp);
-			
 		
 		// Make the file executable: this can be done using chmod(fileName, 0777)
 		chmod(fileName, 0777);
-		
 		
 		// Create a child process using fork
 		childProcId = fork();
