@@ -32,6 +32,8 @@ Source: http://www.admin-magazine.com/Articles/How-to-Hide-a-Malicious-File
 
 PART II
 
+Instructions
+
 Execute the program:
 $ python binder.py <prog1> <prog2> ... <progN>
 
