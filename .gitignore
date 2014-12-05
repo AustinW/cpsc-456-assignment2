@@ -1,4 +1,10 @@
-simple
-bound
-codearray.h
-.idea
+Unix/simple
+Unix/bound
+Unix/codearray.h
+Windows/simple.exe
+Windows/simple.obj
+Windows/bound
+Windows/codearray.h
+
+*/.idea
+*.pyc
